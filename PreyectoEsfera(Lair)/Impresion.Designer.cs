@@ -36,6 +36,7 @@
             System.Windows.Forms.Label fechaLabel;
             System.Windows.Forms.Label totalLabel;
             System.Windows.Forms.Label fechaLabel2;
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Impresion));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
@@ -468,6 +469,7 @@
             this.Controls.Add(this.button1);
             this.Controls.Add(id_ventaLabel);
             this.Controls.Add(this.id_ClienteTextBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Impresion";
             this.Text = "Impresion";
             this.Load += new System.EventHandler(this.Impresion_Load);
