@@ -33,14 +33,21 @@ namespace PreyectoEsfera_Lair_
 
         private void button1_Click(object sender, EventArgs e)
         {
+            String m = "";
             tabControl1.Visible = true;
             dataGridView1.DataSource = compra.carrito(id_ventaTextBox);
             dataGridView2.DataSource = compra.carrito(id_ventaTextBox);
             compra reg = new compra();
             reg.person(id_ClienteTextBox, label1);
             reg.person(id_ClienteTextBox, label5);
+
             reg.suma(id_ventaTextBox, lblsub, lbliva, lbltot);
-            
+            m = lblsub.Text;
+            //MessageBox.Show(m);
+            label7.Text = m;
+           // totalLabel1.Text = lblsub.Text;
+          //  reg.suma(id_ventaTextBox, totalLabel1, lbliva, lbltot);
+
         }
 
         private void button2_Click(object sender, EventArgs e)
@@ -54,6 +61,21 @@ namespace PreyectoEsfera_Lair_
         }
 
         private void fechaLabel1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void totalLabel1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void lblsub_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label6_Click(object sender, EventArgs e)
         {
 
         }

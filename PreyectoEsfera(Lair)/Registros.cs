@@ -148,7 +148,20 @@ namespace PreyectoEsfera_Lair_
             double st = sum * .16;
             l2.Text = Convert.ToString(st);
             l3.Text = Convert.ToString(sum + st);
+        }
 
+        public void sumaN(TextBox Na, Label l1)
+        {
+            double sum = 0;
+            MySqlCommand _comando = new MySqlCommand(String.Format(
+            "SELECT SUM(  `Subtotal` ) FROM  `Carrito` WHERE  `id_venta` = {0}", Na.Text), ObtenerConexion());
+            MySqlDataReader _reader = _comando.ExecuteReader();
+            while (_reader.Read())
+            {
+                sum = _reader.GetDouble(0);
+            }
+            double st = sum;
+            l1.Text = Convert.ToString(st);
         }
 
         public static List<compra> carrito(TextBox id_ven)
