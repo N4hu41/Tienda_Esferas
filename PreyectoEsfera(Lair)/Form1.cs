@@ -27,12 +27,14 @@ namespace PreyectoEsfera_Lair_
 
         private void Form1_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet2.Esfera' Puede moverla o quitarla según sea necesario.
+            this.esferaTableAdapter.Fill(this.eliarome35436DBDataSet2.Esfera);
             // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet.Cliente' Puede moverla o quitarla según sea necesario.
             this.clienteTableAdapter.Fill(this.eliarome35436DBDataSet.Cliente);
             // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet1.Cliente' Puede moverla o quitarla según sea necesario.
 
             // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet1.Esfera' Puede moverla o quitarla según sea necesario.
-            this.esferaTableAdapter.Fill(this.eliarome35436DBDataSet1.Esfera);
+           // this.esferaTableAdapter.Fill(this.eliarome35436DBDataSet1.Esfera);
             // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet1.Vendedor' Puede moverla o quitarla según sea necesario.
             this.vendedorTableAdapter.Fill(this.eliarome35436DBDataSet1.Vendedor);
 
@@ -57,14 +59,13 @@ namespace PreyectoEsfera_Lair_
 
         private void button2_Click(object sender, EventArgs e)
         {
-            reg.insertaEsferas(txtpin, txtcar, txtgan, txtcantidad, txtcolor, txttamaño);
-            this.esferaTableAdapter.Fill(this.eliarome35436DBDataSet1.Esfera);
+            reg.insertaEsferas(txtpin, txtcar, txtgan, txtcolor, txttamaño);
+            this.esferaTableAdapter.Fill(this.eliarome35436DBDataSet2.Esfera);
             txttamaño.Clear();
             txtpin.Clear();
             txtgan.Clear();
             txtcolor.Clear();
             txtcar.Clear();
-            txtcantidad.Clear();
 
         }
 

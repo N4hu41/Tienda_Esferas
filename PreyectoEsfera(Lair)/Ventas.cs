@@ -27,6 +27,8 @@ namespace PreyectoEsfera_Lair_
 
         private void Ventas_Load(object sender, EventArgs e)
         {
+            // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet2.Esfera' Puede moverla o quitarla según sea necesario.
+            this.esferaTableAdapter1.Fill(this.eliarome35436DBDataSet2.Esfera);
             // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet.Cliente' Puede moverla o quitarla según sea necesario.
             this.clienteTableAdapter1.Fill(this.eliarome35436DBDataSet.Cliente);
             // TODO: esta línea de código carga datos en la tabla 'eliarome35436DBDataSet1.Vendedor' Puede moverla o quitarla según sea necesario.
@@ -59,30 +61,30 @@ namespace PreyectoEsfera_Lair_
         {
 
         }
-        public int canti_vali()
+        public double canti_vali()
         {
-            int cantidad = 0;
+            double cantidad = 0;
             if (radioButton3.Checked == true)
             {
                 descrip = "Caja de 6 Esferas Color " + colorLabel1.Text + " Tamaño " + tamLabel1.Text;
-                cantidad = 6 * Convert.ToInt32(txtcanti.Text);
+                cantidad = Convert.ToDouble(precio_en_cajaLabel1.Text)*(6 * Convert.ToInt32(txtcanti.Text));
             }
 
             if (radioButton4.Checked == true)
             {
                 descrip = "Caja de 12 Esferas Color " + colorLabel1.Text + " Tamaño " + tamLabel1.Text;
-                cantidad = 12 * Convert.ToInt32(txtcanti.Text);
+                cantidad = Convert.ToDouble(precio_en_cajaLabel1.Text)*(12 * Convert.ToInt32(txtcanti.Text));
             }
 
             if (radioButton5.Checked == true)
             {
                 descrip = "Caja de 24 Esferas Color " + colorLabel1.Text + " Tamaño " + tamLabel1.Text;
-                cantidad = 24 * Convert.ToInt32(txtcanti.Text);
+                cantidad = Convert.ToDouble(precio_en_cajaLabel1.Text)*(24 * Convert.ToInt32(txtcanti.Text));
             }
             if (radioButton6.Checked == true)
             {
                 descrip = "Esferas Color " + colorLabel1.Text + " Tamaño " + tamLabel1.Text;
-                cantidad = Convert.ToInt32(txtcanti.Text);
+                cantidad = Convert.ToDouble(costo_esfLabel1.Text) * Convert.ToDouble(txtcanti.Text);
             }
            
             return cantidad;
@@ -91,7 +93,7 @@ namespace PreyectoEsfera_Lair_
         private void button2_Click(object sender, EventArgs e)
         {
             
-            int mulcan = canti_vali();
+            double mulcan = canti_vali();
             double subtotal = Convert.ToDouble(costo_esfLabel1.Text) * mulcan;
             reg.insertaCompra(id_esferaLabel1, txtcanti, descrip, subtotal, textBox2);
             dataGridView1.DataSource = compra.carrito(textBox2);

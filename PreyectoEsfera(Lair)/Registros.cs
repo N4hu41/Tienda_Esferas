@@ -60,7 +60,7 @@ namespace PreyectoEsfera_Lair_
             Coman.Connection.Close();
             inserta.desconectar();
         }
-        public void insertaEsferas(TextBox pintu,TextBox carto,TextBox ganch, TextBox canti, TextBox color, TextBox tamaño)
+        public void insertaEsferas(TextBox pintu,TextBox carto,TextBox ganch, TextBox color, TextBox tamaño)
         {
             MySqlCommand Coman;
             conec.datos inserta = new conec.datos();
@@ -68,11 +68,35 @@ namespace PreyectoEsfera_Lair_
             double pi = Convert.ToDouble(pintu.Text);
             double car = Convert.ToDouble(carto.Text);
             double ganc = Convert.ToDouble(ganch.Text);
-            int cantidad = Convert.ToInt32(canti.Text);
+            double costo = 0;
+            double costo2 = 0;
+            int cant=0;
 
-            double costo = (pi + car + ganc) / cantidad;
+            int tam = int.Parse(tamaño.Text);
+            if (tam == 3)
+            {
+                 costo = (pi / 300 + car / 300 + ganc/700 );
+                 cant = 300;
+            }
+            else
+                if (tam == 5)
+                {
+                    costo = (pi / 265 + car / 265 + ganc/700 );
+                    cant = 265;
+                }
+            if (tam == 3)
+            {
+                costo2 = (pi / 300 + ganc / 700);
+                cant = 300;
+            }
+            else
+                if (tam == 5)
+                {
+                    costo2 = (pi /265 + ganc / 700);
+                    cant = 265;
+                }
 
-            String query = "INSERT INTO `eliarome35436DB`.`Esfera` (`costo_esf`, `color`, `tam`, `disponibilidad`) VALUES ('" + costo + "','" + color.Text + "','" + tamaño.Text+ "','" + cantidad + "')";
+            String query = "INSERT INTO `eliarome35436DB`.`Esfera` (`costo_esf`, `color`, `tam`, `disponibilidad`, `Precio_en_caja`) VALUES ('" + costo2 + "','" + color.Text + "','" + tamaño.Text + "' , '" + cant + "','" + costo+"')";
             Coman = inserta.construye_command(query);
             inserta.ejecutanonquery();
             Coman.Connection.Close();

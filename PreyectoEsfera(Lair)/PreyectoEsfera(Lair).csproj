@@ -65,6 +65,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>eliarome35436DBDataSet1.xsd</DependentUpon>
     </Compile>
+    <Compile Include="eliarome35436DBDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>eliarome35436DBDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -135,6 +140,17 @@
     </None>
     <None Include="eliarome35436DBDataSet1.xss">
       <DependentUpon>eliarome35436DBDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="eliarome35436DBDataSet2.xsc">
+      <DependentUpon>eliarome35436DBDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="eliarome35436DBDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>eliarome35436DBDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="eliarome35436DBDataSet2.xss">
+      <DependentUpon>eliarome35436DBDataSet2.xsd</DependentUpon>
     </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>

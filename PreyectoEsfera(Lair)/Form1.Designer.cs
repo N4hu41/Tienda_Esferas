@@ -49,17 +49,8 @@
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.txttamaño = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.esferaDataGridView = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.esferaBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.txtcolor = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.txtcantidad = new System.Windows.Forms.TextBox();
-            this.label7 = new System.Windows.Forms.Label();
             this.txtgan = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txtpin = new System.Windows.Forms.TextBox();
@@ -95,22 +86,33 @@
             this.label12 = new System.Windows.Forms.Label();
             this.vendedorTableAdapter = new PreyectoEsfera_Lair_.eliarome35436DBDataSet1TableAdapters.VendedorTableAdapter();
             this.tableAdapterManager = new PreyectoEsfera_Lair_.eliarome35436DBDataSet1TableAdapters.TableAdapterManager();
-            this.esferaTableAdapter = new PreyectoEsfera_Lair_.eliarome35436DBDataSet1TableAdapters.EsferaTableAdapter();
             this.clienteTableAdapter = new PreyectoEsfera_Lair_.eliarome35436DBDataSetTableAdapters.ClienteTableAdapter();
             this.tableAdapterManager1 = new PreyectoEsfera_Lair_.eliarome35436DBDataSetTableAdapters.TableAdapterManager();
+            this.eliarome35436DBDataSet2 = new PreyectoEsfera_Lair_.eliarome35436DBDataSet2();
+            this.esferaBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.esferaTableAdapter = new PreyectoEsfera_Lair_.eliarome35436DBDataSet2TableAdapters.EsferaTableAdapter();
+            this.tableAdapterManager2 = new PreyectoEsfera_Lair_.eliarome35436DBDataSet2TableAdapters.TableAdapterManager();
+            this.esferaDataGridView = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn17 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.vendedorDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.vendedorBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eliarome35436DBDataSet1)).BeginInit();
             this.tabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.esferaDataGridView)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.esferaBindingSource)).BeginInit();
             this.tabPage3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.eliarome35436DBDataSet)).BeginInit();
             this.groupBox6.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eliarome35436DBDataSet2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.esferaBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.esferaDataGridView)).BeginInit();
             this.SuspendLayout();
             // 
             // tabControl1
@@ -195,7 +197,7 @@
             // 
             // button1
             // 
-            this.button1.Font = new System.Drawing.Font("Kozuka Gothic Pr6N H", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Location = new System.Drawing.Point(251, 47);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(142, 46);
@@ -255,13 +257,11 @@
             // tabPage2
             // 
             this.tabPage2.AutoScroll = true;
+            this.tabPage2.Controls.Add(this.esferaDataGridView);
             this.tabPage2.Controls.Add(this.txttamaño);
             this.tabPage2.Controls.Add(this.label9);
-            this.tabPage2.Controls.Add(this.esferaDataGridView);
             this.tabPage2.Controls.Add(this.txtcolor);
             this.tabPage2.Controls.Add(this.label8);
-            this.tabPage2.Controls.Add(this.txtcantidad);
-            this.tabPage2.Controls.Add(this.label7);
             this.tabPage2.Controls.Add(this.txtgan);
             this.tabPage2.Controls.Add(this.label6);
             this.tabPage2.Controls.Add(this.txtpin);
@@ -293,58 +293,6 @@
             this.label9.TabIndex = 17;
             this.label9.Text = "Tamaño:";
             // 
-            // esferaDataGridView
-            // 
-            this.esferaDataGridView.AutoGenerateColumns = false;
-            this.esferaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.esferaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn5,
-            this.dataGridViewTextBoxColumn6,
-            this.dataGridViewTextBoxColumn7,
-            this.dataGridViewTextBoxColumn8,
-            this.dataGridViewTextBoxColumn9});
-            this.esferaDataGridView.DataSource = this.esferaBindingSource;
-            this.esferaDataGridView.Location = new System.Drawing.Point(12, 139);
-            this.esferaDataGridView.Name = "esferaDataGridView";
-            this.esferaDataGridView.RowHeadersVisible = false;
-            this.esferaDataGridView.Size = new System.Drawing.Size(501, 187);
-            this.esferaDataGridView.TabIndex = 16;
-            // 
-            // dataGridViewTextBoxColumn5
-            // 
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "id_esfera";
-            this.dataGridViewTextBoxColumn5.HeaderText = "id_esfera";
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            // 
-            // dataGridViewTextBoxColumn6
-            // 
-            this.dataGridViewTextBoxColumn6.DataPropertyName = "costo_esf";
-            this.dataGridViewTextBoxColumn6.HeaderText = "costo_esf";
-            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
-            // 
-            // dataGridViewTextBoxColumn7
-            // 
-            this.dataGridViewTextBoxColumn7.DataPropertyName = "color";
-            this.dataGridViewTextBoxColumn7.HeaderText = "color";
-            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
-            // 
-            // dataGridViewTextBoxColumn8
-            // 
-            this.dataGridViewTextBoxColumn8.DataPropertyName = "tam";
-            this.dataGridViewTextBoxColumn8.HeaderText = "tam";
-            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
-            // 
-            // dataGridViewTextBoxColumn9
-            // 
-            this.dataGridViewTextBoxColumn9.DataPropertyName = "disponibilidad";
-            this.dataGridViewTextBoxColumn9.HeaderText = "disponibilidad";
-            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
-            // 
-            // esferaBindingSource
-            // 
-            this.esferaBindingSource.DataMember = "Esfera";
-            this.esferaBindingSource.DataSource = this.eliarome35436DBDataSet1;
-            // 
             // txtcolor
             // 
             this.txtcolor.Location = new System.Drawing.Point(251, 61);
@@ -360,23 +308,6 @@
             this.label8.Size = new System.Drawing.Size(34, 13);
             this.label8.TabIndex = 15;
             this.label8.Text = "Color:";
-            // 
-            // txtcantidad
-            // 
-            this.txtcantidad.Location = new System.Drawing.Point(251, 25);
-            this.txtcantidad.Name = "txtcantidad";
-            this.txtcantidad.Size = new System.Drawing.Size(100, 20);
-            this.txtcantidad.TabIndex = 14;
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(196, 28);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(52, 13);
-            this.label7.TabIndex = 13;
-            this.label7.Text = "Cantidad:";
-            this.label7.Click += new System.EventHandler(this.label7_Click);
             // 
             // txtgan
             // 
@@ -412,7 +343,7 @@
             // 
             // button2
             // 
-            this.button2.Font = new System.Drawing.Font("Kozuka Gothic Pr6N H", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button2.Location = new System.Drawing.Point(384, 44);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(112, 52);
@@ -525,7 +456,7 @@
             // 
             // button4
             // 
-            this.button4.Font = new System.Drawing.Font("Kozuka Gothic Pr6N H", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button4.Location = new System.Drawing.Point(409, 77);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(121, 46);
@@ -670,14 +601,9 @@
             this.tableAdapterManager.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager.CarritoTableAdapter = null;
             this.tableAdapterManager.ClienteTableAdapter = null;
-            this.tableAdapterManager.EsferaTableAdapter = this.esferaTableAdapter;
             this.tableAdapterManager.UpdateOrder = PreyectoEsfera_Lair_.eliarome35436DBDataSet1TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
             this.tableAdapterManager.VendedorTableAdapter = this.vendedorTableAdapter;
             this.tableAdapterManager.VentaTableAdapter = null;
-            // 
-            // esferaTableAdapter
-            // 
-            this.esferaTableAdapter.ClearBeforeFill = true;
             // 
             // clienteTableAdapter
             // 
@@ -688,6 +614,79 @@
             this.tableAdapterManager1.BackupDataSetBeforeUpdate = false;
             this.tableAdapterManager1.ClienteTableAdapter = this.clienteTableAdapter;
             this.tableAdapterManager1.UpdateOrder = PreyectoEsfera_Lair_.eliarome35436DBDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // eliarome35436DBDataSet2
+            // 
+            this.eliarome35436DBDataSet2.DataSetName = "eliarome35436DBDataSet2";
+            this.eliarome35436DBDataSet2.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // esferaBindingSource
+            // 
+            this.esferaBindingSource.DataMember = "Esfera";
+            this.esferaBindingSource.DataSource = this.eliarome35436DBDataSet2;
+            // 
+            // esferaTableAdapter
+            // 
+            this.esferaTableAdapter.ClearBeforeFill = true;
+            // 
+            // tableAdapterManager2
+            // 
+            this.tableAdapterManager2.BackupDataSetBeforeUpdate = false;
+            this.tableAdapterManager2.EsferaTableAdapter = this.esferaTableAdapter;
+            this.tableAdapterManager2.UpdateOrder = PreyectoEsfera_Lair_.eliarome35436DBDataSet2TableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete;
+            // 
+            // esferaDataGridView
+            // 
+            this.esferaDataGridView.AutoGenerateColumns = false;
+            this.esferaDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.esferaDataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dataGridViewTextBoxColumn5,
+            this.dataGridViewTextBoxColumn6,
+            this.dataGridViewTextBoxColumn7,
+            this.dataGridViewTextBoxColumn8,
+            this.dataGridViewTextBoxColumn9,
+            this.dataGridViewTextBoxColumn17});
+            this.esferaDataGridView.DataSource = this.esferaBindingSource;
+            this.esferaDataGridView.Location = new System.Drawing.Point(12, 139);
+            this.esferaDataGridView.Name = "esferaDataGridView";
+            this.esferaDataGridView.Size = new System.Drawing.Size(558, 199);
+            this.esferaDataGridView.TabIndex = 18;
+            // 
+            // dataGridViewTextBoxColumn5
+            // 
+            this.dataGridViewTextBoxColumn5.DataPropertyName = "id_esfera";
+            this.dataGridViewTextBoxColumn5.HeaderText = "id_esfera";
+            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
+            // 
+            // dataGridViewTextBoxColumn6
+            // 
+            this.dataGridViewTextBoxColumn6.DataPropertyName = "costo_esf";
+            this.dataGridViewTextBoxColumn6.HeaderText = "costo_esf";
+            this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
+            // 
+            // dataGridViewTextBoxColumn7
+            // 
+            this.dataGridViewTextBoxColumn7.DataPropertyName = "color";
+            this.dataGridViewTextBoxColumn7.HeaderText = "color";
+            this.dataGridViewTextBoxColumn7.Name = "dataGridViewTextBoxColumn7";
+            // 
+            // dataGridViewTextBoxColumn8
+            // 
+            this.dataGridViewTextBoxColumn8.DataPropertyName = "tam";
+            this.dataGridViewTextBoxColumn8.HeaderText = "tam";
+            this.dataGridViewTextBoxColumn8.Name = "dataGridViewTextBoxColumn8";
+            // 
+            // dataGridViewTextBoxColumn9
+            // 
+            this.dataGridViewTextBoxColumn9.DataPropertyName = "disponibilidad";
+            this.dataGridViewTextBoxColumn9.HeaderText = "disponibilidad";
+            this.dataGridViewTextBoxColumn9.Name = "dataGridViewTextBoxColumn9";
+            // 
+            // dataGridViewTextBoxColumn17
+            // 
+            this.dataGridViewTextBoxColumn17.DataPropertyName = "Precio_en_caja";
+            this.dataGridViewTextBoxColumn17.HeaderText = "Precio_en_caja";
+            this.dataGridViewTextBoxColumn17.Name = "dataGridViewTextBoxColumn17";
             // 
             // Form1
             // 
@@ -707,14 +706,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.eliarome35436DBDataSet1)).EndInit();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.esferaDataGridView)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.esferaBindingSource)).EndInit();
             this.tabPage3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.clienteDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.clienteBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.eliarome35436DBDataSet)).EndInit();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.eliarome35436DBDataSet2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.esferaBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.esferaDataGridView)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -733,8 +733,6 @@
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TextBox txtcolor;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox txtcantidad;
-        private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox txtgan;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtpin;
@@ -766,14 +764,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
-        private eliarome35436DBDataSet1TableAdapters.EsferaTableAdapter esferaTableAdapter;
-        private System.Windows.Forms.BindingSource esferaBindingSource;
-        private System.Windows.Forms.DataGridView esferaDataGridView;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
         private System.Windows.Forms.Button button4;
         private eliarome35436DBDataSet eliarome35436DBDataSet;
         private System.Windows.Forms.BindingSource clienteBindingSource;
@@ -789,6 +779,17 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn16;
         private System.Windows.Forms.TextBox txttamaño;
         private System.Windows.Forms.Label label9;
+        private eliarome35436DBDataSet2 eliarome35436DBDataSet2;
+        private System.Windows.Forms.BindingSource esferaBindingSource;
+        private eliarome35436DBDataSet2TableAdapters.EsferaTableAdapter esferaTableAdapter;
+        private eliarome35436DBDataSet2TableAdapters.TableAdapterManager tableAdapterManager2;
+        private System.Windows.Forms.DataGridView esferaDataGridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn7;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn8;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn9;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn17;
     }
 }
 

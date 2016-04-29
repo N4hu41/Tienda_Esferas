@@ -36,3 +36,15 @@ C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\obj\x86\Debu
 C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Properties.Resources.resources
 C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Ventas.resources
 C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csproj.GenerateResource.Cache
+G:\EferasLair\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe.config
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).exe
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).pdb
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csprojResolveAssemblyReference.cache
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Form1.resources
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Impresion.resources
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Menu.resources
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Properties.Resources.resources
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Ventas.resources
+G:\EferasLair\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csproj.GenerateResource.Cache
+G:\EferasLair\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe
+G:\EferasLair\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).pdb
