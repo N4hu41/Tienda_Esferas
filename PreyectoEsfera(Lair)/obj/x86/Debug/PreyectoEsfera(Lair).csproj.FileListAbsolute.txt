@@ -1,0 +1,26 @@
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).pdb
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Form1.resources
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Properties.Resources.resources
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csproj.GenerateResource.Cache
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).exe
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).pdb
+c:\users\juan elias\documents\visual studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe.config
+C:\Users\Juan Elias\Documents\Visual Studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csprojResolveAssemblyReference.cache
+C:\Users\Juan Elias\Documents\Visual Studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Ventas.resources
+C:\Users\Juan Elias\Documents\Visual Studio 2010\Projects\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Impresion.resources
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe.config
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).exe
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).pdb
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).pdb
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csprojResolveAssemblyReference.cache
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Form1.resources
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Impresion.resources
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Properties.Resources.resources
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Ventas.resources
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).csproj.GenerateResource.Cache
+C:\Users\joker\Downloads\PreyectoEsferaLair\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera_Lair_.Menu.resources
+C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\bin\Debug\PreyectoEsfera(Lair).exe.config
+C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).exe
+C:\Users\joker\Documents\GitHub\Tienda_Esferas\PreyectoEsfera(Lair)\PreyectoEsfera(Lair)\obj\x86\Debug\PreyectoEsfera(Lair).pdb
